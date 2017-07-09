@@ -1,0 +1,81 @@
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: arial, sans-serif;
+}
+body {
+	width: 800px;
+	margin: auto;
+}
+main {
+	width: 100%;
+	min-height: 100px;
+	background: white;
+	float: left;
+	padding: 0 10px;
+/*border: 2px solid black; */
+}
+footer {
+	width: 100%;
+	min-height: 90px;
+	background: orange;
+	margin: 0 auto;
+	padding: 10px;
+	margin-bottom: 5px;
+line-height: 50px;
+}
+header {
+	min-height: 95px;
+}
+
+.one {
+	width: 33%;
+	min-height: 100px;
+	background: white;
+	float: left;
+}
+.two {
+	width: 33%;
+	min-height: 100px;
+	background: white;
+	float: left;
+}
+.three {
+	width: 33%;
+	min-height: 100px;
+	background: white;
+	float: left;
+}
+
+img{
+	width: 100%;
+	display: block;
+	padding: 2px;
+}
+
+h1 {
+	line-height: 50px;
+font-weight: normal;
+padding: 0 5px;
+}
+p {line-height: 22px;
+font-weight: normal;
+padding: 0 5px;
+
+}
+.main::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+@media screen and (max-width: 800px){
+	.main{width: 100%;}
+	aside {width: 25%;}
+	main {width: 50%}
+}
+@media screen and (max-width: 960px){
+	.one, .two, .three {width: 100%;}
+	main {width: 100%;}
+	img {display: inline-block; width: 50%;}
+	.main {width: 100%;}
+}

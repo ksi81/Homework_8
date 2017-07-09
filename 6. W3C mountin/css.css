@@ -1,0 +1,78 @@
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+.main {
+	width: 60%;
+	min-height: 100px;
+	background: white;
+	float: left;
+	padding: 10px;
+/*border: 2px solid black; */
+}
+header {
+	width: 100%;
+	min-height: 80px;
+	background: lightgrey;
+	margin: 0 auto;
+	padding: 10px;
+	margin-bottom: 5px;
+line-height: 50px;
+}
+
+.menu {
+	width: 25%;
+	min-height: 100px;
+	background: white;
+	float: left;
+}
+ul {
+  padding: 0 6px;
+}
+li {
+list-style-type: none; /* Убираем маркеры */
+ list-style: none;
+  padding: 5px 0 8px 5px;
+ 
+ border-bottom: 1px solid grey; /* белая линия */
+ margin: -1px 0 -2px; /* "нахлестываем" на предыдущий и следующий пункт,
+  в результате чего и достигается нужный эффект */
+  height: 1%; /* для устранения бага в IE6 и IE7 */
+}
+main {
+	width: 50%;
+	min-height: 100px;
+	/*background: green;*/
+	float: left;
+	padding: 0 10px;
+}
+img{
+	width: 100%;
+}
+
+aside {
+	width: 25%;
+	min-height: 100px;
+	background: lightblue;
+	float: left;
+	padding: 5px;
+}
+h1 {
+	line-height: 50px;
+}
+.main::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+@media screen and (max-width: 800px){
+	.main{width: 100%;}
+	aside {width: 25%;}
+	main {width: 50%}
+}
+@media screen and (max-width: 450px){
+	aside {width: 100%;}
+	main {width: 100%;}
+	.menu {width: 100%;}
+}
