@@ -3,14 +3,16 @@ padding: 0;
 box-sizing: border-box;
 font-family: sans-serif;
 }
-.main {
-	width: 60%;
+
+
+.wrapper {
+	width: 70%;
 	min-height: 100px;
 	background: white;
-	float: left;
 	padding: 10px;
-/*border: 2px solid black; */
+margin: auto;
 }
+
 header {
 	width: 100%;
 	min-height: 80px;
@@ -40,10 +42,13 @@ list-style-type: none; /* Убираем маркеры */
   в результате чего и достигается нужный эффект */
   height: 1%; /* для устранения бага в IE6 и IE7 */
 }
+a{
+	text-decoration: none;
+	color: black;
+}
 main {
 	width: 50%;
 	min-height: 100px;
-	/*background: green;*/
 	float: left;
 	padding: 0 10px;
 }
@@ -61,13 +66,13 @@ aside {
 h1 {
 	line-height: 50px;
 }
-.main::after {
+.wrapper::after {
 	content: "";
 	display: block;
 	clear: both;
 }
 @media screen and (max-width: 800px){
-	.main{width: 100%;}
+	.wrapper {width: 100%;}
 	aside {width: 25%;}
 	main {width: 50%}
 }
